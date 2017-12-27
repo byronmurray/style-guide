@@ -1,42 +1,64 @@
 
 // Descriptive color variables
-$white          : #fff;
-$black          : #000;
-$grey           : #878787;
-$regent-st-blue : #add8e6;
-$river-bed      : #48525c;
-$yellow-orange  : #ffa949;
+$white            : #fff;
+$black            : #000;
+$light-grey       : #6d6d6d;
+$mediumaquamarine : #67e1bf;
+$lightskyblue     : #6adafb;
+$lightgreen       : #8ada9f;
+$lightcoral       : #dd757b;
+$coral            : #f57a5b;
+$mediumpurple     : #9475bf;
+$cadetblue        : #54a7c8;
+$plum             : #deaded;
+$tan              : #e79ea2;
+$lightsalmon      : #f6a086;
+
 
 // Functional color variables
-$color-prim         : $yellow-orange;
-$color-sec          : $river-bed;
+$color-primary      : $mediumaquamarine;
+$color-seconary     : $lightskyblue;
 
 $color-text-light   : $white;
-$color-text-base    : $grey;
-$color-text-dark    : $river-bed;
+$color-text-base    : $light-grey;
 
-$color-border-light : lighten($grey, 35%);
-$color-border-dark  : $yellow-orange;
-
-$color-link-default : $yellow-orange;
-$color-link-visited : $regent-st-blue;
-
-$color-shadow       : rgba($black,.8);
-$color-body         : $white;
+$color-headline     : $color-primary;
 
 
-// Font stacks
+//font wieghts
+$font-thin       : 100;
+$font-light      : 300;
+$font-medium     : 600;
+$font-bold       : 700;
+$font-ultra-bold : 900;
+
+// Text
+$font-size       : 16px;
+$line-height     : 24px;
+
+//paddings and margins
+$gutter          : .25em;
+
+// // Font stacks
 $stack-sans-serif : Helvetica, Arial, sans-serif;
 $stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
 $stack-abolition  : 'Abolition Regular', $stack-sans-serif;
+//
+// // Border radius
+$br: .25em;
+//
+// // Asset paths
+// $path-img  : '../img';
+// $path-font : '../fonts';
 
-// Border radius
-$br: 10px;
+// Grid
+$column-width    : 65px !default;
+$column-gutter   : 20px !default;
+$column-items    : 12 !default;
 
-// Asset paths
-$path-img  : '../img';
-$path-font : '../fonts';
-
-// Media query breakpoints
-$brk-narrow: '(max-width: 768px)';
-$brk-wide: '(max-width: 1024px)';
+$max-width       : 1050px;
+//$g-cont-max-w   : 1050px !default;
+//
+// // Media query breakpoints
+$breakpoint-sm: 1px;
+$breakpoint-md: 768px;

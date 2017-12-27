@@ -1,3 +1,45 @@
 // Media Queries
 // Flexbox settings
 // Element and Modifier BEM Selectors
+
+
+// Media query Mixins
+@mixin media($break) {
+  @if $break == "small" {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  }
+  // build the grid layout here
+  @else if $break == "medium" {
+    @media (min-width: $breakpoint-md + 1) {
+      .grid__col {
+      		@include flexbox-grid-layout;
+      }
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for `#{$break}`. ";
+  }
+}
+
+// Adjacent sibling margins
+@mixin margin-left($margin: 1em) {
+  & + & {
+   margin-left: $margin;
+   @content;
+  }
+}
+
+// Flex grid columns
+@mixin flexbox-grid-layout {
+  @for $i from 1 through $column-items {
+    $context: grid-context($column-width, $column-items ,$column-gutter) !global;
+    $target: ($column-width * $i) + ($column-gutter * ($i - 1));
+    // Generate and output the column modifier classes
+    &--#{$i} {
+      flex-basis: percentage($target / $context);
+    }
+  }
+}
