@@ -5,7 +5,7 @@
   line-height: ($line-height/$font-size);
 }
 
-body{
+.container {
   margin-top: 3em;
   font: 1em/1.5 $stack-helvetica;
   color: lighten($color-text-base, 10%);

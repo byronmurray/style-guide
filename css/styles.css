@@ -458,7 +458,7 @@ template {
   box-sizing: border-box;
   line-height: 1.5; }
 
-body {
+.container {
   margin-top: 3em;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #878787; }
