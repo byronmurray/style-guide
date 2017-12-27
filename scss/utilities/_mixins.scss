@@ -1,8 +1,3 @@
-// Media Queries
-// Flexbox settings
-// Element and Modifier BEM Selectors
-
-
 // Media query Mixins
 @mixin media($break) {
   @if $break == "small" {
@@ -37,7 +32,7 @@
   @for $i from 1 through $column-items {
     $context: grid-context($column-width, $column-items ,$column-gutter) !global;
     $target: ($column-width * $i) + ($column-gutter * ($i - 1));
-    // Generate and output the column modifier classes
+    // modifier classes
     &--#{$i} {
       flex-basis: percentage($target / $context);
     }

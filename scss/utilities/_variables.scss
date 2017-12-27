@@ -1,4 +1,3 @@
-
 // Descriptive color variables
 $white            : #fff;
 $black            : #000;
@@ -13,7 +12,6 @@ $cadetblue        : #54a7c8;
 $plum             : #deaded;
 $tan              : #e79ea2;
 $lightsalmon      : #f6a086;
-
 
 // Functional color variables
 $color-primary      : $mediumaquamarine;
@@ -43,13 +41,9 @@ $gutter          : .25em;
 $stack-sans-serif : Helvetica, Arial, sans-serif;
 $stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
 $stack-abolition  : 'Abolition Regular', $stack-sans-serif;
-//
+
 // // Border radius
 $br: .25em;
-//
-// // Asset paths
-// $path-img  : '../img';
-// $path-font : '../fonts';
 
 // Grid
 $column-width    : 65px !default;
@@ -57,8 +51,7 @@ $column-gutter   : 20px !default;
 $column-items    : 12 !default;
 
 $max-width       : 1050px;
-//$g-cont-max-w   : 1050px !default;
-//
+
 // // Media query breakpoints
 $breakpoint-sm: 1px;
 $breakpoint-md: 768px;
